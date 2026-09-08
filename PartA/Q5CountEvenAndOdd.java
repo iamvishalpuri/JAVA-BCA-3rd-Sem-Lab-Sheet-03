@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Q5CountEvenAndOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int even = 0;
+        int odd = 0;
+
+        // Count parity of each element.
+        for (int i = 0; i < n; i++) {
+            int value = sc.nextInt();
+            if (value % 2 == 0) {
+                even++;
+            } else {
+                odd++;
+            }
+        }
+
+        System.out.println("Even: " + even);
+        System.out.println("Odd: " + odd);
+        sc.close();
+    }
+}
